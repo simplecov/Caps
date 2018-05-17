@@ -7,11 +7,17 @@ using Caps.src.GameObjects.Interfaces;
 
 namespace Caps.src.GameObjects
 {
-    class Being : GameObject, IMove, IConsumer, IReproduct
+    class Being : GameObject, IMove, IConsumer, IRelationships, IBirth
     {
         int[] position;
         public int life;
         private GameObject consumeObject;
+
+        Being(int[] position, int life)
+        {
+            this.life = life;
+            this.position = position;
+        }
 
         public void Move()
         {
@@ -23,9 +29,18 @@ namespace Caps.src.GameObjects
 
         }
 
-        public Being Reproduct(Being papa, Being mama)
+        public bool MakeSense(Being papa, Being mama)
         {
-            var result = new Being();
+            bool result = true; //findAPartner();
+            return result;
+        }
+
+        public Being Birth(Being papa, Being mama)
+        {
+            int[] position = { 10, 10 };// getPosition()
+            int life = 100; // getLife()
+
+            var result = new Being(position, life);
             return result;
         }
     }

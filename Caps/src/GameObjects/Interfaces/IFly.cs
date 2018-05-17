@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Caps.src.GameObjects.Interfaces
 {
-    interface IReproduct
+    interface IFly : IMove
     {
-        Being Reproduct(Being papa, Being mama);
+        void Fly();
     }
 }

@@ -55,8 +55,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\Draw\Draw.cs" />
     <Compile Include="src\GameObjects\Being.cs" />
+    <Compile Include="src\GameObjects\Food.cs" />
     <Compile Include="src\GameObjects\GameObject.cs" />
+    <Compile Include="src\GameObjects\Interfaces\IBirth.cs" />
     <Compile Include="src\GameObjects\Interfaces\IConsumer.cs" />
+    <Compile Include="src\GameObjects\Interfaces\IFly.cs" />
     <Compile Include="src\GameObjects\Interfaces\IGameObject.cs" />
     <Compile Include="src\GameObjects\Interfaces\IMove.cs" />
     <Compile Include="src\GameObjects\Interfaces\IReproduct.cs" />
